@@ -2,6 +2,7 @@
 
 ### *Sistema de Otimização para Campanhas de Castração*
 
+
 ---
 
 ## 📛 Badges
@@ -15,82 +16,6 @@
 </p>
 
 ---
-📌 Sobre o Projeto
-
-Este projeto foi desenvolvido para *otimizar o processo de cadastramento em campanhas de castração*, permitindo que tutores realizem o registro online dos animais. O sistema reduz filas, melhora a gestão de vagas e amplia o acesso da população aos serviços.
-
-Criado como parte do *Projeto Integrador da UNISAL, segue princípios de **acessibilidade, usabilidade e design responsivo*, garantindo navegação fluida em qualquer dispositivo.
-
----
-
-## 🎯 Funcionalidades
-
-* Cadastro online de tutores e pets
-* Interface responsiva (desktop e mobile)
-* Layout acessível com alto contraste e tipografia legível
-* Navegação intuitiva
-* Base pronta para integração com API e banco de dados
-* Organização otimizada das vagas da campanha
-
----
-
-## 🛠️ Tecnologias
-
-* *HTML5*
-* *CSS3*
-* *JavaScript*
-* Figma (Wireframes)
-* Back-end em fase de planejamento
-
----
-
-## 🚀 Execução do Projeto
-
-bash
-# Clone o repositório
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-
-# Entre na pasta
-cd SEU_REPOSITORIO
-
-# Abra o projeto no navegador
-start index.html   # Windows
-open index.html    # Mac
-
-
----
-
-## 📅 Roadmap
-
-* ✔️ Conclusão do front-end
-* ✔️ Protótipo responsivo
-* 🔄 Modelagem do banco de dados
-* 🔄 Construção do back-end
-* 🔧 CRUD de tutores e pets
-* 🔧 Rotas para agendamentos
-* 📲 Painel administrativo
-* 📡 Deploy da aplicação
-
----
-
-## 👨‍💻 Integrantes
-
-* Aline Brito
-* Ângelo Bevilacqua
-* Athos Silva
-* *Kelwen Mont’Alvão*
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob MIT — sinta-se livre para usar e contribuir.
-
----
-
----
-
-# 🇺🇸 *EN — English Version*
 
 ## 📌 About the Project
 
