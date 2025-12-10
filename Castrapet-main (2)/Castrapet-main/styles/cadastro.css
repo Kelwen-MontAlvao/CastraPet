@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3ec7c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  height: 57px;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.btn-orange {
+  background-color: #ff875e;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #e86a45;
+  color: white;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container a {
+  color: #3cc3c9;
+}
+
+footer {
+  background-color: #3cc3c9;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 900px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .form-container {
+    margin: 50px auto;
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    gap: 8px;
+  }
+
+  .form-container {
+    margin: 30px auto;
+    padding: 20px;
+  }
+}

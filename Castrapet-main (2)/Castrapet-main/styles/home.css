@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #3ec7c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  height: 57px;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+nav .btn {
+  background-color: #f46b45;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+main.conteudo {
+  flex: 1;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.campanha h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.campanha .descricao,
+.campanha .descricao2,
+.campanha .descricao3 {
+  color: #3ec7c7;
+  font-weight: 700;
+}
+
+.campanha a {
+  color: #005fa3;
+  text-decoration: none;
+}
+
+/* Responsividade das imagens */
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.imagens img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Figura lateral */
+figure {
+  position: fixed;
+  top: 200px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+}
+
+figcaption {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  }
+
+
+footer {
+  background-color: #3cc3c9;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 900px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  main.conteudo {
+    padding: 20px;
+  }
+
+  figure {
+    position: static;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .imagens img {
+    max-width: 90%;
+  }
+
+  footer {
+    position: relative;
+  }
+}

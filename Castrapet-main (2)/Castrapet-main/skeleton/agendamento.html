@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha de Castração</title>
+    <link rel="stylesheet" href="../styles/agendamento.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" width="100px" alt="Serviço Social Castração de Animais">
+        </div>
+        <nav>
+            <a href="home.html" class="active">Home</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="historico.html">Histórico</a>
+        </nav>
+    </header>
+
+    <div class="pet-wrapper">
+
+        <h2 class="titulo-pet">Dados do Pet</h2>
+
+        <div class="pet-container">
+
+            <div class="pet-foto">
+                <img src="https://jpimg.com.br/uploads/2024/03/10-mitos-sobre-os-caes-da-raca-golden-retriever.jpg"
+                    alt="Foto do Pet">
+                <p>Thor</p>
+            </div>
+
+            <div class="pet-form">
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Espécie</label>
+                        <select id="especie" required>
+                            <option value="">Selecione...</option>
+                            <option value="gato">Gato</option>
+                            <option value="cao">Cão</option>
+                        </select>
+
+
+                    </div>
+
+                    <div class="campo">
+                        <label>Observações</label>
+                        <input type="text" placeholder="Condições específicas, medicações entre outros">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Porte</label>
+                        <select id="porte" required>
+                            <option value="">Selecione...</option>
+                            <option value="grande">Grande</option>
+                            <option value="medio">Médio</option>
+                            <option value="pequeno">Pequeno</option>
+                        </select>
+
+                    </div>
+
+                    <div class="campo small">
+                        <label>Idade</label>
+                        <input type="text" placeholder="Ex: 6 meses">
+                    </div>
+
+                    <div class="campo">
+                        <label>Data de Agendamento</label required>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo small">
+                        <label>Sexo</label>
+                        <select id="sexo" required>
+                            <option value="">Selecione...</option>
+                            <option value="femea">Fêmea</option>
+                            <option value="macho">Macho</option>
+                        </select>
+
+
+                    </div>
+
+                    <div class="campo small">
+                        <label>Peso (kg)</label>
+                        <input type="text" placeholder="Ex: 5.2">
+                    </div>
+                </div>
+
+                <div class="campo small">
+                        <label>Nome do pet</label>
+                        <input id="petNome" placeholder="Nome do pet">
+                    </div>
+                    <br>
+
+                <div class="linha">
+                    <div class="campo full">
+                        <label>Vacinação em dia?</label>
+                        <select id="vacinacao" required>
+                            <option value="">Selecione...</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+                <button class="btn-salvar">Salvar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        ADS - grupo 7 2025 - Todos os direitos reservados.
+    </footer>
+
+    <script src="../brain/agendamento.js"></script>
+
+</body>
+
+</html>

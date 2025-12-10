@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3ec7c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 57px;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+
+.pet-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.titulo-pet {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.pet-container {
+    background: #f8f8f8;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: auto;
+}
+
+.pet-foto {
+    text-align: center;
+    width: 140px;
+}
+
+.pet-foto img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pet-foto p {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.pet-form {
+    flex: 1;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo.small {
+    max-width: 120px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-salvar {
+    background: #9bdedb;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #3cc3c9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pet-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .linha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo.small {
+        max-width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .titulo-pet {
+        font-size: 22px;
+    }
+
+    .pet-container {
+        padding: 20px;
+    }
+
+    .pet-foto img {
+        width: 90px;
+        height: 90px;
+    }
+}
